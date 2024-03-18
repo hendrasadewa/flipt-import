@@ -59,7 +59,7 @@ export const useFormValues = create(
           return;
         }
 
-        const key = name.split(' ').join('-');
+        const key = name.toLowerCase().split(' ').join('-');
 
         set({
           segment: {
