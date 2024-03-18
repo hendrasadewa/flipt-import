@@ -1,0 +1,8 @@
+export enum ApplicationSteps {
+  LOGIN,
+  CHOOSE_NAMESPACE,
+  INPUT_SEGMENT,
+  IMPORT_FILE,
+  CREATE_ROLLOUT,
+  SUCCESS,
+}
