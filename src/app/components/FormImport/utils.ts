@@ -22,7 +22,7 @@ export async function loadFile(fileList: FileList) {
 }
 
 export function chunkArray<T = unknown>(arr: Array<T>, size: number) {
-  return Array.from({ length: Math.ceil(arr.length / size) }, (v, i) =>
+  return Array.from({ length: Math.ceil(arr.length / size) }, (_, i) =>
     arr.slice(i * size, i * size + size)
   );
 }
